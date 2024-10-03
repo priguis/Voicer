@@ -1,0 +1,103 @@
+/* Tipografia e cores principais */
+body {
+    font-family: 'Poppins', sans-serif;  /* Tipografia moderna */
+    background-color: #f5f6fa;           /* Fundo claro e suave */
+    color: #333;                         /* Cor do texto para boa legibilidade */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #2f3640;                      /* Título escuro e forte */
+    margin-bottom: 20px;
+  }
+  
+  #recordBtn {
+    background-color: #e84118;           /* Botão de gravação vermelho (chamativo) */
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;                 /* Bordas arredondadas para suavidade */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;    /* Transição suave para hover */
+  }
+  
+  #recordBtn:hover {
+    background-color: #c23616;           /* Cor levemente mais escura ao passar o mouse */
+    transform: scale(1.05);              /* Leve aumento no tamanho para feedback visual */
+  }
+  
+  #transcript {
+    margin-top: 30px;
+    border: 1px solid #dcdde1;
+    padding: 20px;
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #fff;              /* Fundo branco para contraste */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow-y: auto;                    /* Para rolagem, se o texto for longo */
+    font-size: 1rem;
+    color: #2f3640;
+    line-height: 1.5;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  #transcript:focus {
+    outline: none;
+    border-color: #40739e;               /* Destaque da borda ao focar */
+    box-shadow: 0 0 10px rgba(64, 115, 158, 0.5); /* Sombra ao focar */
+  }
+  
+  .upload-btn {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;                           /* Espaço entre os botões */
+  }
+  
+  .upload-btn button {
+    background-color: #273c75;           /* Azul escuro para botões de envio */
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .upload-btn button:hover {
+    background-color: #192a56;           /* Azul escuro levemente mais intenso ao passar o mouse */
+    transform: scale(1.05);              /* Feedback visual ao passar o mouse */
+  }
+  
+  /* Layout responsivo */
+  @media (max-width: 768px) {
+    #transcript {
+      width: 90%;
+      height: 200px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #recordBtn {
+      padding: 10px 30px;
+      font-size: 1rem;
+    }
+  
+    .upload-btn button {
+      padding: 8px 20px;
+      font-size: 0.9rem;
+    }
+  }
+  
